@@ -1,6 +1,10 @@
-# startup_namer
+# Startup Name Generator
 
-A new Flutter project.
+**[Flutter](https://flutter.dev)** 公式のチュートリアルの [Part 1](https://flutter.dev/docs/get-started/codelab) と [Part 2](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2) を実際に実装してみたもの。
+
+---
+
+以下、元のテンプレのREADME
 
 ## Getting Started
 
