@@ -35,6 +35,7 @@ class RandomWordsState extends State<RandomWords> {
 
   // アンダースコアを付けると private になる
   final _suggestions = <WordPair>[]; // リストに表示される単語一覧
+  final _saved = Set<WordPair>(); // 一意にしたいので List でなく Set を用いる
   final _biggerFont = const TextStyle(fontSize: 18.0);
 
   // 単語と区切り線が交互に出てくる ListView を作成する
@@ -57,10 +58,16 @@ class RandomWordsState extends State<RandomWords> {
 
   // WordPair をもとに ListTile を作成
   Widget _buildRow(WordPair pair) {
+    final bool alreadySaved = _saved.contains(pair);
+
     return ListTile(
       title: Text(
         pair.asPascalCase,
         style: _biggerFont,
+      ),
+      trailing: Icon(
+        alreadySaved ? Icons.favorite : Icons.favorite_border,
+        color: alreadySaved ? Colors.red : null,
       ),
     );
   }
