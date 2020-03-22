@@ -2,6 +2,10 @@
 
 **[Flutter](https://flutter.dev)** 公式のチュートリアルの [Part 1](https://flutter.dev/docs/get-started/codelab) と [Part 2](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2) を実際に実装してみたもの。
 
+<div align="center">
+    <img src="./preview.gif" alt="Startup Name Generator Demo" width="auto" height="400rem">
+</div>
+
 ---
 
 以下、元のテンプレのREADME
